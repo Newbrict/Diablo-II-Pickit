@@ -4,14 +4,49 @@
 //===========       Unique       ===========
 //==========================================
 
+// Arachnid Mesh
+[name] == spiderwebsash && [quality] == unique && [flag] != ethereal # [enhanceddefense] >= 90
+
+// Nosferatu's Coil
+//[name] == vampirefangbelt && [quality] == unique && [flag] != ethereal # [lifeleech] == 7 && [defense] == 63
+
+// Verdungo's Hearty Cord
+[name] == mithrilcoil && [quality] == unique && [flag] != ethereal # [damageresist] == 15 && [vitality] == 40
+
+// String of Ears
+[name] == demonhidesash && [quality] == unique && [flag] != ethereal # [damageresist] == 15 && [lifeleech] == 8 && [enhanceddefense] == 180 && [magicdamagereduction] == 15
+
+// Snowclash
+//[name] == battlebelt  && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 170
+
+// Thundergod's Vigor
+//[name] == warbelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 200
+
+// Goldwrap
+[name] == heavybelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 60 && [itemgoldbonus] == 80
+[name] == battlebelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 60
+[name] == trollbelt && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 60 && [defense] == 130
+
 //==========================================
 //===========       Crafted      ===========
 //==========================================
+
+// HP STR
+[type] == belt && [class] >= exceptional && [quality] == crafted # [maxhp] >= 50 && [strength] >= 15
+
+// FHR FCR
+[type] == belt && [class] >= exceptional && [quality] == crafted # [fhr] == 24 && [fcr] == 10
+
 
 //==========================================
 //===========        Rare        ===========
 //==========================================
 
-//==========================================
-//===========        Magic       ===========
-//==========================================
+// FHR STR HP
+[type] == belt && [quality] == rare && [flag] != ethereal # [fhr] == 24 && [strength] >= 20 && [maxhp] >= 50
+
+// FHR HP GF
+[type] == belt && [quality] == rare && [flag] != ethereal # [fhr] == 24 && [strength] >= 10 && [maxhp] >= 30 && [itemgoldbonus] >= 70
+
+// FHR HP ETHBUG
+[type] == belt && [quality] == rare && [flag] == ethereal # ([fhr] == 24 || [maxhp] >= 50) && [enhanceddefense] >= 150 && ([itemreplenishdurability] > 0 || [itemreplenishquantity] > 0)

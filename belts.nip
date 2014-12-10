@@ -32,10 +32,16 @@
 //==========================================
 
 // HP STR
-[type] == belt && [class] >= exceptional && [quality] == crafted # [maxhp] >= 50 && [strength] >= 15
+[type] == belt && [quality] == crafted # [maxhp] >= 50 && [strength] >= 15
+
+// OW STR LIFE RES
+[type] == belt && [quality] == crafted # [ItemOpenWounds] >= 5 && [FHR] >= 17 && [Strength] >= 10 && [MaxHP] >= 30 && ([FireResist] + [LightResist] + [ColdResist]) >= 10
+
+// HIGH RES
+[type] == belt && [quality] == crafted # [Strength] >= 10 && [MaxHP] >= 30 && ([FireResist] + [LightResist] + [ColdResist]) >= 50
 
 // FHR FCR
-[type] == belt && [class] >= exceptional && [quality] == crafted # [fhr] == 24 && [fcr] == 10
+[type] == belt && [quality] == crafted # [fhr] >= 17 && [fcr] >= 10
 
 
 //==========================================

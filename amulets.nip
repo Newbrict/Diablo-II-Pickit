@@ -1,0 +1,73 @@
+// Newbrict
+
+//==========================================
+//===========       Unique       ===========
+//==========================================
+
+// Mara's Kaleidoscope
+[type] == amulet && [quality] == unique # [strength] == 5
+
+// Highlord's Wrath
+[type] == amulet && [quality] == unique # [lightresist] == 35
+
+// The Cat's Eye
+[type] == amulet && [quality] == unique # [dexterity] == 25
+
+// Metalgrid
+[type] == amulet && [quality] == unique # [tohit] >= 450 && [plusdefense] >= 350 && [fireresist] >= 35
+
+//==========================================
+//===========       Crafted      ===========
+//==========================================
+
+// Trapsin
+[type] == amulet && [quality] == crafted # [assassinskills] == 2 && [fcr] >= 15
+
+// Tornado Druid
+[type] == amulet && [quality] == crafted # [druidskills] == 2 && [fcr] >= 18
+
+// Other Caster
+[type] == amulet && [quality] == crafted # [itemaddclassskills] >= 2 && [fcr] >= 10 && ([strength]+[dexterity] >= 25 || [maxhp]+[maxmana] >= 50)
+
+// 2+ Skiller / 10fcr
+[Type] == amulet && [Quality] == crafted # [FCR] >= 10 && ([ItemAddClassSkills] >= 2 || [ItemAddSkillTab] >= 2)
+
+// 2+ Skiller / +Stat
+[Type] == amulet && [Quality] == crafted # ([ItemAddClassSkills] >= 2 || [ItemAddSkillTab] >= 2) && ([MaxMana] >= 60 || [MaxHP] >= 30 || [strength] >= 15 || [dexterity] >= 5)
+
+// 2+ Skiller / frw
+[Type] == amulet && [Quality] == crafted # [FRW] >= 5 && ([ItemAddClassSkills] >= 2 || [ItemAddSkillTab] >= 2)
+
+// 2+ Skiller / ctb
+[Type] == amulet && [Quality] == crafted # [ToBlock] >= 5 && ([ItemAddClassSkills] >= 2 || [ItemAddSkillTab] >= 2)
+
+//==========================================
+//===========        Rare        ===========
+//==========================================
+
+// Sorc Caster
+[type] == amulet && [quality] == rare # [sorceressskills] == 2 && [fcr] == 10 && ([maxhp] >= 35 || [maxmana] >= 80) && ([strength]+[dexterity] >= 15 || [fireresist] >= 10 && [coldresist] >= 10)
+
+// Other Caster
+[type] == amulet && [quality] == rare # [necromancerskills]+[paladinskills]+[assassinskills] == 2 && [fcr] == 10 && [maxhp] >= 35 && ([strength]+[dexterity] >= 15 || [fireresist] >= 10 && [coldresist] >= 10)
+
+// Skiller +Stats
+[type] == amulet && [quality] == rare # [amazonskills]+[paladinskills]+[druidskills]+[assassinskills]+[barbarianskills] == 2 && [strength]+[dexterity] >= 15 && [maxhp] >= 35 && [fireresist] >= 10 && [coldresist] >= 10
+
+// Warcry Barb
+[type] == amulet && ([quality] == rare || [quality] == magic) # [barbarianskills] == 2 && [itemgoldbonus] == 80
+
+//==========================================
+//===========        Magic       ===========
+//==========================================
+
+// Max MF
+[type] == amulet && [quality] == magic # [itemmagicbonus] == 50
+
+// Warcry Barb
+[type] == amulet && [quality] == magic # [warcriesskilltab] == 3 && ([itemgoldbonus] == 80 || [maxhp] == 100)
+
+// Skillers
+[type] == amulet && [quality] == magic # ([shadowdisciplinesskilltab] == 3 || [poisonandboneskilltab] == 3 || [palicombatskilltab] == 3) && [maxhp] == 100
+[type] == amulet && [quality] == magic # ([coldskilltab] == 3 || [lightningskilltab] == 3 || [fireskilltab] == 3) && [maxhp] == 100
+[type] == amulet && [quality] == magic # ([paladinskills] == 2 || [palicombatskilltab] == 3 || [sorceressskills] == 2 || [lightningskilltab] == 3) && [normaldamagereduction] == 25

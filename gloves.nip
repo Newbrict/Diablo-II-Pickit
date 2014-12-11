@@ -1,0 +1,69 @@
+// Newbrict
+
+//==========================================
+//===========       Unique       ===========
+//==========================================
+
+//Dracul's Grasp
+[name] == vampirebonegloves && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 120 && [strength] == 15
+
+// Steelrend
+[name] == ogregauntlets && [quality] == unique && [flag] != ethereal # [enhanceddamage] == 60 && [strength] == 20 && [defense] == 281
+
+// Lava Gout
+//[name] == battlegauntlets && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 200
+
+// Bloodfist
+[name] == heavygloves && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 20
+[name] == sharkskingloves && [quality] == unique # [enhanceddefense] == 20 // && [defense] == 56
+[name] == vampirebonegloves && [quality] == unique # [enhanceddefense] == 20 && [defense] == 88
+
+// Chance Guard
+[name] == chaingloves && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 30 && [itemmagicbonus] == 40
+
+// Magefist
+[name] == lightgauntlets && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 30 // magefist
+[name] == battlegauntlets && [quality] == unique # [enhanceddefense] == 30 // && [defense] == 71 // magefist x1
+[name] == crusadergauntlets && [quality] == unique # [enhanceddefense] == 30 && [defense] == 98 // magefist x2
+
+// Frostburn
+//[name] == gauntlets && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 20 # [maxquantity] == 1
+
+//==========================================
+//===========       Crafted      ===========
+//==========================================
+
+// IAS STR DEX
+[type] == gloves && [quality] == crafted # [ias] >= 20 && [strength]+[dexterity] >= 15
+
+// Skiller  IAS STR / DEX
+[Type] == gloves && [Quality] == crafted # [ItemAddSkillTab] >= 2 && [IAS] >= 20 && ([Strength] >= 6 || [Dexterity] >= 6)
+
+// Skiller IAS STR DEX
+[Type] == gloves && [Quality] == crafted # [ItemAddSkillTab] >= 2 && [IAS] >= 20 && [Strength]+[Dexterity] >= 15
+
+// CB IAS STR DEX
+[Type] == gloves && [Quality] == crafted # [ItemCrushingBlow] >= 5 && [IAS] >= 20 && ([Strength] >= 10 || [Dexterity] >= 10)
+
+// CB STR DEX
+[Type] == gloves && [Quality] == crafted # [ItemCrushingBlow] >= 5 && [Strength]+[Dexterity] >= 15
+
+//==========================================
+//===========        Rare        ===========
+//==========================================
+
+// IAS STR DEX
+[type] == gloves && [quality] == rare && [flag] != ethereal # [ias] == 20 && [strength]+[dexterity] >= 30
+
+// Amazon IAS DEX
+[type] == gloves && [quality] == rare && [flag] != ethereal # [ias] == 20 && [javelinandspearskilltab]+[passiveandmagicskilltab] >= 2 && ([strength] == 15  || [dexterity] == 15)
+
+// IAS ethbug
+[type] == gloves && [quality] == rare && [flag] == ethereal # [ias] == 20 && [enhanceddefense] >= 175 && ([itemreplenishdurability] > 0 || [itemreplenishquantity] > 0)
+
+//==========================================
+//===========        Magic       ===========
+//==========================================
+
+// 3 java 20 ias gloves
+//[type] == gloves && [quality] == magic && [flag] != ethereal # [ias] == 20 && [javelinandspearskilltab] == 3

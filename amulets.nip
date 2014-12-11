@@ -11,7 +11,7 @@
 [type] == amulet && [quality] == unique # [lightresist] == 35
 
 // The Cat's Eye
-[type] == amulet && [quality] == unique # [dexterity] == 25
+//[type] == amulet && [quality] == unique # [dexterity] == 25
 
 // Metalgrid
 [type] == amulet && [quality] == unique # [tohit] >= 450 && [plusdefense] >= 350 && [fireresist] >= 35

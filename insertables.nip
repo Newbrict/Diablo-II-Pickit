@@ -1,0 +1,84 @@
+//Newbrict
+
+//==========================================
+//===========        Gems        ===========
+//==========================================
+
+[name] == perfectamethyst
+[name] == perfecttopaz
+[name] == perfectdiamond
+[name] == perfectsapphire
+
+//==========================================
+//===========        Runes       ===========
+//==========================================
+
+//[name] == elrune    # # [MaxQuantity] == 1
+//[name] == eldrune   # # [MaxQuantity] == 1
+//[name] == tirrune   # # [MaxQuantity] == 1
+//[name] == nefrune   # # [MaxQuantity] == 1
+//[name] == ethrune   # # [MaxQuantity] == 1
+//[name] == ithrune   # # [MaxQuantity] == 1
+//[name] == talrune   # # [MaxQuantity] == 1
+//[name] == ralrune   # # [MaxQuantity] == 1
+//[name] == ortrune   # # [MaxQuantity] == 2
+//[name] == thulrune  # # [MaxQuantity] == 2
+//[name] == amnrune   # # [MaxQuantity] == 1
+//[name] == solrune   # # [MaxQuantity] == 2
+//[name] == shaelrune # # [MaxQuantity] == 1
+//[name] == dolrune   # # [MaxQuantity] == 1
+//[name] == helrune   # # [MaxQuantity] == 2
+//[name] == iorune    # # [MaxQuantity] == 1
+//[name] == lumrune   # # [MaxQuantity] == 1
+//[name] == korune    # # [MaxQuantity] == 1
+//[name] == falrune   # # [MaxQuantity] == 1
+//[name] == lemrune   # # [MaxQuantity] == 1
+
+// Keep all high runes :)
+[name] >= istrune && [name] <= zodrune
+
+//==========================================
+//===========       Jewels       ===========
+//==========================================
+
+//===========       Unique       ===========
+
+// Cold Facet
+[Name] == jewel && [quality] == unique # [passivecoldpierce]+[passivecoldmastery] >= 10
+
+// Poison Facet
+[Name] == jewel && [quality] == unique # [passivepoispierce]+[passivepoismastery] >= 10
+
+// Lightning Facet
+[Name] == jewel && [quality] == unique # [passiveltngpierce]+[passiveltngmastery] >= 10
+
+// Fire Facet
+[Name] == jewel && [quality] == unique # [passivefirepierce]+[passivefiremastery] >= 10
+
+//===========        Rare        ===========
+
+// STR DEX
+[Name] == jewel && [Quality] == rare # [strength] >= 9 && [dexterity] >= 9
+
+// FHR STR/DEX/IREQ RESIST
+[Name] == jewel && [Quality] == rare # [fhr] == 7 && ([strength] >= 8 || [dexterity] >= 8 || [itemreqpercent] == -15) && ([maxmana] == 15 || [fireresist] >= 10 && [coldresist] >= 10 || [fireresist] >= 30 || [coldresist] >= 30 || [lightresist] >= 30)
+
+// FHR MANA
+[Name] == jewel && [Quality] == rare # [fhr] == 7 && [energy] == 9 && [maxmana] == 15
+
+// HIGH ED STR/DEX AR/IREQ/DEF
+[Name] == jewel && [Quality] == rare # [enhanceddamage] >= 25 && ([strength] >= 8 || [dexterity] >= 8) && ([tohit] >= 40 || [itemreqpercent] == -15 || [defense] >= 30)
+
+// Perf Fire res
+[name] == jewel && [quality] == rare # [fireresist] >= 35
+
+//===========        Magic       ===========
+
+// Perf pre/suff ( 40/15's here )
+[Name] == jewel && [quality] == magic # ([enhanceddamage] >= 40 || [tohit] == 100 || [maxdamage] >= 15) && ([maxhp] == 20 || [ias] >= 15 || [itemreqpercent] <= -15 || [strength] >= 9 || [dexterity] >= 9)
+
+// High res  + good suffix
+[Name] == jewel && [quality] == magic # ([fireresist] == 30 || [coldresist] == 30 || [lightresist] == 30 || [fireresist] >= 15 && [lightresist] >= 15 || [maxmana] == 20) && ([maxhp] == 20 || [fhr] == 7 || [ias] == 15 || [itemreqpercent] <= -15 || [strength] >= 9 || [dexterity] >= 9)
+
+// MAX DMG
+[Name] == jewel && [quality] == magic # [maxdamage] >= 30

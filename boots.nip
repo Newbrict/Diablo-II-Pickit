@@ -1,0 +1,71 @@
+// Newbrict
+
+//==========================================
+//===========       Unique       ===========
+//==========================================
+
+// Goblin Toe
+//[name] == lightplatedboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 60
+//[name] == battleboots && [quality] == unique && [flag] == identified // # [defense] == 90
+//[name] == mirroredboots && [quality] == unique && [flag] == identified # [defense] == 123
+
+// Gore Rider
+[name] == warboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 200
+[name] == myrmidongreaves && [quality] == unique && [flag] == identified # [defense] == 213
+
+// Sandstorm Trek
+[name] == scarabshellboots && [quality] == unique && [flag] == ethereal # [strength]+[vitality] == 30
+
+// Marrowwalk
+//[name] == boneweaveboots && [quality] == unique && [flag] != ethereal # [strength] == 20 // marrowwalk
+
+// Shadow Dancer
+[name] == myrmidongreaves && [quality] == unique && [flag] != ethereal # [shadowdisciplinesskilltab] == 2 && [dexterity] == 25
+
+// Infernostride
+[name] == demonhideboots && [quality] == unique && [flag] != ethereal # [itemgoldbonus] == 70 && [enhanceddefense] == 150
+[name] == wyrmhideboots && [quality] == unique && [flag] != ethereal # [defense] == 170
+
+// Waterwalk
+[name] == sharkskinboots && [quality] == unique && [flag] != ethereal # [maxhp] == 65 && [enhanceddefense] == 210
+[name] == scarabshellboots && [quality] == unique && [flag] != ethereal # [maxhp] == 65 && [defense] == 201
+
+// War Traveler
+[name] == battleboots && [quality] == unique && [flag] != ethereal # [itemmagicbonus] >= 50 || [enhanceddefense] >= 190
+
+// Hotspur
+[name] == boots && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 20
+[name] == demonhideboots && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 20 // && [defense] == 48
+[name] == wyrmhideboots && [quality] == unique && [flag] != ethereal # [defense] == 80
+
+//==========================================
+//===========       Crafted      ===========
+//==========================================
+
+// Mana bonus boots
+[type] == boots && [quality] == crafted # [itemmaxmanapercent] >= 4 && [maxmana] >= 40
+
+// FRW Mana RES
+[Type] == boots && [Quality] == crafted # [FRW] >= 30 && [MaxMana] >= 30 && [FireResist]+[LightResist]+[ColdResist]+[PoisonResist] >= 50
+
+// FHR Mana RES
+[Type] == boots && [Quality] == crafted # [FHR] >= 10 && [MaxMana] >= 30 && ([FireResist] >= 25 || [LightResist] >= 25 || [ColdResist] >= 25 || [PoisonResist] >= 25)
+
+//==========================================
+//===========        Rare        ===========
+//==========================================
+
+// FRW FHR TRIRES
+[type] == boots && [quality] == rare && [flag] != ethereal # [frw] >= 30 && [fhr] == 10 && [fireresist] >= 25 && [coldresist] >= 25 && [lightresist] >= 25
+
+// FRW FHR HIGH RES
+[type] == boots && [quality] == rare && [flag] != ethereal # [frw] >= 30 && [fhr] == 10 && ([fireresist] + [coldresist] + [lightresist]) >= 55
+
+// FRW FHR Fireres goldfind
+[type] == boots && [quality] == rare && [flag] != ethereal # [frw] >= 30 && [fhr] == 10 && [fireresist] >= 35 && [itemgoldbonus] >= 70
+
+// FRW FHR Mana HIGH RES
+[type] == boots && [quality] == rare && [flag] != ethereal # [frw] >= 30 && [fhr] == 10 && [maxmana] >= 35 && [fireresist]+[coldresist]+[lightresist] >= 50
+
+// HIGH ED ETH BUG
+[type] == boots && [quality] == rare && [flag] == ethereal # [enhanceddefense] >= 175 && ([itemreplenishdurability] > 0 || [itemreplenishquantity] > 0)

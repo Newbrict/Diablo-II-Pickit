@@ -1,0 +1,94 @@
+// Newbrict
+
+//==========================================
+//===========        Small       ===========
+//==========================================
+
+// 20 lifers
+[name] == smallcharm && [quality] == magic # [maxhp] == 20
+
+// Maxdmg AR
+[name] == smallcharm && [quality] == magic # [maxdamage] == 4 && [tohit] == 20
+
+// 20 lifer eledamage
+[name] == smallcharm && [quality] == magic # [maxhp] == 20 && ([coldmindam] == 10 && [coldmaxdam] == 20 || [lightmaxdam] == 71 || [firemindam] == 19 && [firemaxdam] == 29)
+
+// ele damage
+[name] == smallcharm && [quality] == magic # [lightmaxdam] == 99 || [firemindam] == 26 && [firemaxdam] == 42 || [firemindam] == 19 && [firemaxdam] == 29 && [lightmaxdam] == 28 || [firemindam] == 7 && [firemaxdam] == 13 && [lightmaxdam] == 71
+
+// High res
+[name] == smallcharm && [quality] == magic # [fireresist]+[lightresist]+[coldresist] >= 15
+
+// 20 lifer res
+[name] == smallcharm && [quality] == magic # [maxhp] == 20 && ([fireresist] > 3 && [lightresist] > 3 || [fireresist] > 9 || [lightresist] > 9 || [coldresist] > 9)
+
+// lifer + perfect res
+[name] == smallcharm && [quality] == magic # [maxhp] >= 19 && ([fireresist] == 5 && [lightresist] == 5 || [fireresist] == 11 || [lightresist] == 11 || [coldresist] == 11)
+
+// lifer/fhr/frw + light res + ar/dmg/mana/res
+[name] == smallcharm && [quality] == magic # ([tohit] >= 36 || [maxdamage] == 3 || [maxmana] >= 17 || [fireresist] >= 11 || [coldresist] >= 11 || [lightresist] >= 11 || [fireresist] == 5 && [lightresist] == 5) && ([maxhp] >= 20 || [fhr] == 5 || [frw] == 3)
+
+// MF SC
+[name] == smallcharm && [quality] == magic # [itemmagicbonus] >= 6
+
+// MF +RES
+[name] == smallcharm && [quality] == magic # [itemmagicbonus] == 7 && ([fireresist] >= 11 || [coldresist] >= 11 || [lightresist] >= 11 || [fireresist]+[lightresist]+[coldresist] == 15 || [maxmana] >= 17)
+
+// frw/20lifer + poison damage
+[name] == smallcharm && [quality] == magic # [poisonmaxdam] >= 205 && ([maxhp] >= 20 || [frw] == 3)
+
+// high poison damage
+[name] == smallcharm && [quality] == magic # [poisonmaxdam] >= 291
+
+// goldfind + stat
+[name] == smallcharm && [quality] == magic # [itemgoldbonus] == 10 && ([tohit] >= 30 || [poisonmaxdam] == 299 || [maxdamage] == 3 || [maxmana] == 17 || [fireresist] == 11 || [fireresist] == 5 && [lightresist] == 5)
+
+//==========================================
+//===========        Large       ===========
+//==========================================
+
+// HP/MP
+[name] == largecharm && [quality] == magic # [maxmana]+[maxhp] >= 70
+
+// damage + lifer
+[name] == largecharm && [quality] == magic # [maxdamage] == 6 && [maxhp] == 35
+
+// res + lifer
+[name] == largecharm && [quality] == magic # [fireresist] == 8 && [lightresist] == 8 && [maxhp] == 35
+
+//==========================================
+//===========        Grand       ===========
+//==========================================
+
+// Gheed's Fortune
+[name] == grandcharm && [quality] == unique # [itemmagicbonus] >= 35 // || [itemgoldbonus] >= 150
+
+// skiller + life/str/dex/fhr/frw
+[name] == grandcharm && [quality] == magic # ([palicombatskilltab]+[fireskilltab]+[coldskilltab]+[lightningskilltab]+[trapsskilltab]+[shadowdisciplinesskilltab]+[javelinandspearskilltab]+[poisonandboneskilltab]+[elementalskilltab] == 1) && ([maxhp] >= 30 || [strength] >= 6 || [dexterity] >= 6 || [fhr] >= 12 || [frw] == 7)
+
+// skiller + life
+[name] == grandcharm && [quality] == magic # [shapeshiftingskilltab] == 1 && [maxhp] >= 35
+
+// skillers
+[name] == grandcharm && [quality] == magic # [palicombatskilltab] == 1
+[name] == grandcharm && [quality] == magic # [lightningskilltab] == 1
+[name] == grandcharm && [quality] == magic # [javelinandspearskilltab] == 1
+[name] == grandcharm && [quality] == magic # [trapsskilltab] == 1
+
+// good pre/suff
+[name] == grandcharm && [quality] == magic # ([coldresist] == 15 && [lightresist] == 15 || [maxdamage] >= 10) && ([maxhp] >= 30 || [strength] >= 6 || [dexterity] >= 6 || [fhr] >= 12 || [frw] == 7)
+
+// AR HP
+[name] == grandcharm && [quality] == magic # [tohit] >= 125 && [maxhp] >= 30
+
+// DMG
+[name] == grandcharm && [quality] == magic # [maxdamage] == 14
+
+// Goldfind + ar/warcries/dmg/mana/res
+[name] == grandcharm && [quality] == magic # [itemgoldbonus] == 40 && ([tohit] >= 130 || [warcriesskilltab] == 1 || [maxdamage] == 10 || [maxmana] == 59 || [fireresist] == 15 && [coldresist] == 15)
+
+// mana + hp/fhr
+[name] == grandcharm && [quality] == magic # [maxmana] == 59 && ([maxhp] >= 30 || [fhr] == 12)
+
+// Goldfind
+//[name] == grandcharm && [quality] == magic # [itemgoldbonus] == 40

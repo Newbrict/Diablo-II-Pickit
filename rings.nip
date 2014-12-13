@@ -33,13 +33,13 @@
 [Type] == ring && [Quality] == crafted # [strength]+[dexterity] >= 25
 
 // FCR +Stat
-[type] == ring && [quality] == crafted # [FCR] == 10 && ([maxhp] >= 40 || [maxhp]+[maxmana] >= 80 || [strength]+[dexterity] >= 25)
+[type] == ring && [quality] == crafted # [FCR] >= 10 && ([maxhp] >= 40 || [maxhp]+[maxmana] >= 80 || [strength]+[dexterity] >= 25)
 
 // FCR +Stat ( More Lenient )
 [Type] == ring && [Quality] == crafted # [FCR] >= 10 && ([strength] >= 10 || [dexterity] >= 10 || [MaxHP] >= 30)
 
 // FCR +MF (MF Hammers)
-[type] == ring && [quality] == crafted # [FCR] == 10 && [itemmagicbonus] >= 1
+[type] == ring && [quality] == crafted # [FCR] >= 10 && [itemmagicbonus] >= 1
 
 //==========================================
 //===========        Rare        ===========

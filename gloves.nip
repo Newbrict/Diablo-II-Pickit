@@ -23,7 +23,7 @@
 
 // Magefist
 [name] == lightgauntlets && [quality] == unique && [flag] != ethereal # [enhanceddefense] == 30 // magefist
-[name] == battlegauntlets && [quality] == unique # [enhanceddefense] == 30 // && [defense] == 71 // magefist x1
+[name] == battlegauntlets && [quality] == unique # [enhanceddefense] == 30 && [defense] == 71 // magefist x1
 [name] == crusadergauntlets && [quality] == unique # [enhanceddefense] == 30 && [defense] == 98 // magefist x2
 
 // Frostburn
@@ -47,6 +47,35 @@
 
 // CB STR DEX
 [Type] == gloves && [Quality] == crafted # [ItemCrushingBlow] >= 5 && [Strength]+[Dexterity] >= 15
+
+[Type] == Gloves && [Quality] == crafted # [JavelinandSpearSkillTab] == 2 && ([LifeLeech] >= 3 || [ManaLeech] >= 3 ) && [ItemCrushingBlow] >= 10 && ([Strength] >= 15 || [Dexterity] >= 15) //
+
+[Type] == Gloves && [Quality] == crafted # [JavelinandSpearSkillTab] == 2 && ([LifeLeech] >= 3 || [ManaLeech] >= 3 ) && [Strength] >= 15 && [Dexterity] >= 15 //
+
+[Type] == Gloves && [Quality] == crafted # [JavelinandSpearSkillTab] == 2 && [IAS] == 20 && ([LifeLeech] >= 3 || [ManaLeech] >= 3 || [Strength] >= 15 || [Dexterity] >= 15 || [ItemCrushingBlow] >= 10 || [ItemKnockBack] >= 1)
+
+[Type] == Gloves && [Quality] == crafted # [BowandCrossbowSkillTab] == 2 && [IAS] == 20 && ([LifeLeech] >= 3 || [ManaLeech] >= 3 || [Strength] >= 15 || [Dexterity] >= 15 || [ItemCrushingBlow] >= 10 || [ItemKnockBack] >= 1)
+
+[Type] == Gloves && [Quality] == crafted # [PassiveandMagicSkillTab] == 2 && [IAS] == 20 && ([LifeLeech] >= 3 || [ManaLeech] >= 3 || [Strength] >= 15 || [Dexterity] >= 15 || [ItemCrushingBlow] >= 10 || [ItemKnockBack] >= 1)
+
+[Type] == Gloves && [Quality] == crafted # [IAS] == 20 && [Strength]+[Dexterity] >= 25
+
+[Type] == Gloves && [Quality] == crafted # [IAS] == 20 && [Strength] >= 15 && ([EnhancedDefense] >= 80 || [MaxHp] >= 20 || [LifeLeech] >= 6 || [ManaLeech] >= 3 || [ItemCrushingBlow] >= 10 || [ColdResist]+[LightResist]+[FireResist]+[PoisonResist] >= 25)
+
+[Type] == Gloves && [Quality] == crafted # [IAS] == 20 && [Dexterity] >= 15 && ([EnhancedDefense] >= 80 || [MaxHp] >= 20 || [LifeLeech] >= 6 || [ManaLeech] >= 3 || [ItemCrushingBlow] >= 10 || [ColdResist]+[LightResist]+[FireResist]+[PoisonResist] >= 25)
+
+[Type] == Gloves && [Quality] == crafted # [IAS] >= 10 && [Strength]+[Dexterity] >= 30
+
+[Type] == Gloves && [Quality] == crafted # [IAS] == 20 && [Strength] >= 15 && ([EnhancedDefense] >= 80 || [MaxHp] >= 20 || [LifeLeech] >= 6 || [ManaLeech] >= 3 || [ItemCrushingBlow] >= 10 || [ColdResist]+[LightResist]+[FireResist]+[PoisonResist] >= 25)
+
+[Type] == Gloves && [Quality] == crafted # [IAS] == 20 && [Dexterity] >= 15 && ([EnhancedDefense] >= 80 || [MaxHp] >= 20 || [LifeLeech] >= 6 || [ManaLeech] >= 3 || [ItemCrushingBlow] >= 10 || [ColdResist]+[LightResist]+[FireResist]+[PoisonResist] >= 25)
+
+[Type] == Gloves && [Quality] == crafted # [IAS] >= 10 && [Strength]+[Dexterity] >= 25 && [MaxHp] >= 15
+
+[Type] == Gloves && [Quality] == crafted # [Strength]+[Dexterity] >= 30 && ([LifeLeech] >= 6 || [LifeLeech] >= 3 && [ManaLeech] >= 3) && [ItemCrushingBlow] >= 10
+
+[Type] == Gloves && [Quality] == crafted # [IAS] == 20 && ([Strength] >= 15 || [Dexterity] >= 15 || [ColdResist]+[LightResist]+[FireResist]+[PoisonResist] >= 30) && [ItemKnockBack] >= 1
+
 
 //==========================================
 //===========        Rare        ===========

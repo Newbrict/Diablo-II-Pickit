@@ -20,7 +20,7 @@
 [type] == ring && [quality] == unique # [dexterity] == 20 && [tohit] == 250
 
 // Dwarf Star
-[type] == ring && [quality] == unique # [maxhp] == 40 && [magicdamagereduction] == 15
+//[type] == ring && [quality] == unique # [maxhp] == 40 && [magicdamagereduction] == 15
 
 //==========================================
 //===========       Crafted      ===========
@@ -40,6 +40,10 @@
 
 // FCR +MF (MF Hammers)
 [type] == ring && [quality] == crafted # [FCR] >= 10 && [itemmagicbonus] >= 1
+
+// MF
+[Type] == ring && [Quality] == crafted # [ItemMagicBonus] >= 25 && ([MaxMana] >= 90 || [MaxHp] >= 40 || [Strength] >= 20 || [Dexterity] >= 15 || [ColdResist]+[LightResist]+[FireResist]+[PoisonResist] >= 40)
+
 
 //==========================================
 //===========        Rare        ===========

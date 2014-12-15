@@ -51,6 +51,15 @@
 // FHR Mana RES
 [Type] == boots && [Quality] == crafted # [FHR] >= 10 && [MaxMana] >= 30 && ([FireResist] >= 25 || [LightResist] >= 25 || [ColdResist] >= 25 || [PoisonResist] >= 25)
 
+[Type] == Boots && [Quality] == crafted # [FRW] >= 30 && [FHR] == 10 && [Dexterity] >= 9 && ([LifeLeech] >= 3 || [ColdResist] >= 35 || [LightResist] >= 35 || [FireResist] >= 35 || [PoisonResist] >= 35 || [ItemGoldBonus] >= 80)
+
+[Type] == Boots && [Quality] == crafted # [FRW] >= 30 && ([FHR] == 10 || [Dexterity] >= 9) && ([ColdResist] >= 35 || [LightResist] >= 35 || [FireResist] >= 35 || [PoisonResist] >= 35) && [ItemGoldBonus] >= 80
+
+[Type] == Boots && [Quality] == crafted # [FRW] >= 30 && ([ItemMagicBonus] >= 25 || [ItemGoldBonus] >= 80 || [FHR] == 10 || [Dexterity] >= 9) && [ColdResist]+[LightResist]+[FireResist]+[PoisonResist] >= 70
+
+[Type] == Boots && [Quality] == crafted # [FRW] >= 30 && [LifeLeech] >= 3 && [ItemGoldBonus] >= 80 && ([FHR] == 10 || [Dexterity] >= 9 || [ColdResist] >= 35 || [LightResist] >= 35 || [FireResist] >= 35 || [PoisonResist] >= 35)
+
+
 //==========================================
 //===========        Rare        ===========
 //==========================================

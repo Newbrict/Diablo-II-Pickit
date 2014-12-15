@@ -8,7 +8,7 @@
 [type] == amulet && [quality] == unique # [strength] == 5
 
 // Highlord's Wrath
-[type] == amulet && [quality] == unique # [lightresist] == 35
+//[type] == amulet && [quality] == unique # [lightresist] == 35
 
 // The Cat's Eye
 //[type] == amulet && [quality] == unique # [dexterity] == 25

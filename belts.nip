@@ -43,6 +43,17 @@
 // FHR FCR
 [type] == belt && [quality] == crafted # [fhr] >= 17 && [fcr] >= 10
 
+[Type] == Belt && [Quality] == crafted # ([MaxHp] >= 40 || [Strength] >= 20) && [ItemGoldBonus] >= 80 && ([LifeLeech] >= 3 || [ColdResist]+[LightResist]+[FireResist]+[PoisonResist] >= 40)
+
+[Type] == Belt && [Quality] == crafted # [FHR] >= 24 && [Strength] >= 20 && [MaxHp] >= 40
+
+[Type] == Belt && [Quality] == crafted # [ItemOpenWounds] >= 10 && ([MaxHp] >= 40 || [Strength] >= 20 || [ColdResist]+[LightResist]+[FireResist]+[PoisonResist] >= 30) && [ItemGoldBonus] >= 80
+
+[Type] == Belt && [Quality] == crafted # [ItemOpenWounds] >= 10 && ([MaxHp] >= 40 || [Strength] >= 20) && [FHR] >= 17
+
+[Type] == Belt && [Quality] == crafted # [FCR] >= 10 && ([MaxHp] >= 40 || [Strength] >= 20 || [ColdResist]+[LightResist]+[FireResist]+[PoisonResist] >= 30) && ([FHR] >= 24 || [ItemGoldBonus] >= 80)
+
+
 
 //==========================================
 //===========        Rare        ===========

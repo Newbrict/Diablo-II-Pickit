@@ -61,7 +61,15 @@
 //===========       Crafted      ===========
 //==========================================
 
-[type] == helm && [quality] == crafted # [itemtohitpercentperlevel] >= 1
+[Type] == Helm && [Quality] == crafted # [ItemTohitPercentperLevel] >= 1 && [Sockets] == 2 && [MaxHp] >= 30 && ([EnhancedDefense] >= 100 || [FHR] == 10 || [ItemPoisonLengthResist] == 25 || [PaliCombatSkillTab] == 2 || [ItemDeadlyStrike] >= 9)
+
+[Type] == Helm && [Quality] == crafted # [ItemTohitPercentperLevel] >= 1 && [Sockets] == 2 && [FHR] == 10 && ([EnhancedDefense] >= 100 || [ItemPoisonLengthResist] == 25 || [PaliCombatSkillTab] == 2 || [ItemDeadlyStrike] >= 9)
+
+[Type] == Helm && [Quality] == crafted # [ItemTohitPercentperLevel] >= 1 && [Sockets] == 2 && [EnhancedDefense] >= 100 && ([ItemPoisonLengthResist] == 25 || [PaliCombatSkillTab] == 2 || [ItemDeadlyStrike] >= 9)
+
+[Type] == Helm && [Quality] == crafted # [ItemTohitPercentperLevel] >= 1 && [Sockets] == 2 && [ItemPoisonLengthResist] == 25 && ([PaliCombatSkillTab] == 2 || [ItemDeadlyStrike] >= 9)
+
+[Type] == Helm && [Quality] == crafted # [ItemTohitPercentperLevel] >= 1 && [Sockets] == 2 && [PaliCombatSkillTab] == 2 && [ItemDeadlyStrike] >= 9
 
 //==========================================
 //===========        Rare        ===========
